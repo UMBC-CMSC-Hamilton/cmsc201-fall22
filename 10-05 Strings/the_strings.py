@@ -143,7 +143,4 @@ print('happy'.join(random_space_words))
 
 print('\u2661', '\u2662', '\u2663', '\u2664')
 
-color_map = {'red': {}, }
 
-print('\a\a')
-input('what')
