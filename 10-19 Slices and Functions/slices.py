@@ -74,6 +74,9 @@ print(time_code.split(":"))
     05:42:29
 """
 # very very sensitive to user input
+
+FIRST_NUM_START = 0
+FIRST_NUM_END = 2
 print(time_code[0:2], time_code[3:5], time_code[6:])
 
 """
