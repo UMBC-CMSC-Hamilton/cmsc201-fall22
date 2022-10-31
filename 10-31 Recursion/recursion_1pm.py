@@ -83,8 +83,22 @@ def fibonacci(n):
         print(f'fib({n}) calculating result {val1} + {val2} = {val1 + val2}')
         return val1 + val2
 
-
-x = int(input(">> "))
-while x != -1:
-    print(fibonacci(x))
+def test_fibonacci():
     x = int(input(">> "))
+    while x != -1:
+        print(fibonacci(x))
+        x = int(input(">> "))
+
+
+def as_and_bs(length, current):
+    if length > 0:
+        as_and_bs(length - 1, current + 'a')
+        as_and_bs(length - 1, current + 'b')
+    else:
+        print(current)
+
+
+x = int(input('>> '))
+while x > 0:
+    as_and_bs(x, '')
+    x = int(input('>> '))
